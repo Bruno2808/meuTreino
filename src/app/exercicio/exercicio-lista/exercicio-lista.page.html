@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Exercicios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let exercicio of listaExercicio | async">
+      <ion-label>{{ exercicio.nome }}</ion-label>
+      <ion-label>{{ exercicio.series }}</ion-label>
+      <ion-label>{{ exercicio.dia }}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button color="dark" expand=full href='home' shape='round'> Voltar </ion-button>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastrar Exercícios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating"> Nome: </ion-label>
+    <ion-input type="text" [(ngModel)]="exercicio.nome" placeholder="Insira o nome do aparelho"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating"> Séries: </ion-label>
+    <ion-input type="text" [(ngModel)]="exercicio.series" placeholder="Insira as séries"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating"> Dia da semana: </ion-label>
+    <ion-input type="text" [(ngModel)]="exercicio.dia" placeholder="Insira os dias da semana"> </ion-input>
+  </ion-item>
+
+  <ion-button color="dark" expand=full (click)="salvar()" shape='round'> Cadastrar </ion-button>
+  <ion-button color="dark" expand=full href='home' shape='round'> Voltar </ion-button>
+</ion-content>
